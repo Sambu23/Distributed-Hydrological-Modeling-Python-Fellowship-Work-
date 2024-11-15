@@ -27,7 +27,7 @@ total_area = 3.6598e+10  # Replace this with your actual area in sq. m
 df['Simulated_Streamflow_mm'] = df['Simulated_Volume_m3'] / total_area * 1000  # Convert to mm
 
 # Load the observed volume data from the Excel file
-observed_file_path = "./Your Data Folder/3. example excel file.xlsx"
+observed_file_path = "./Your Data Folder/2. Volume_m3_observed_flow.xlsx" #this excel is an external data
 observed_df = pd.read_excel(observed_file_path)
 
 # Ensure 'Date' is properly formatted in both dataframes
