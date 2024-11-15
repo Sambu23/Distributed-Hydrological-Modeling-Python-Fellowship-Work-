@@ -6,10 +6,10 @@ import geopandas as gpd
 from rasterio.mask import mask
 
 # Define the input folder containing the NetCDF files and the shapefile location
-input_folder = r"D:\Nepal\Narayani DEM\input values\2004_2014\Eawag Research\Soil girdded data 2004 to 2013"
+input_folder = r"Your input folder containig NetCDF"
 
 # Shapefile location
-shapefile_path = r"D:\Nepal\Narayani DEM\Narayani_river_basin_gcs.shp"
+shapefile_path = r"path\Your desired shapefile to extract from NetCDF.shp"
 
 # Define the output folder and create it if it doesn’t exist
 output_folder = os.path.join(input_folder, "Outputs")
