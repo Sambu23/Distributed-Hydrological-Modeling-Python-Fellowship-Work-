@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the Excel file from Sheet2
-input_file_path = r"D:\Nepal\Narayani DEM\Narayani hydrological station\Full data from 1980 to 2014\Daily discharge data_filled\Discharge_Data_filled_values_filled.xlsx"
+input_file_path = r"path\1. example excel file.xlsx" #your discharge data file (daily)
 df = pd.read_excel(input_file_path, sheet_name='404', parse_dates=['Date'])
 
 # Add a 'Month' column to group by month later
@@ -28,7 +28,7 @@ result_df = pd.DataFrame({
 })
 
 # Export the results to a new Excel file
-output_file_path = r"D:\Nepal\Narayani DEM\input values\2004_2014\Eawag Research\Distributed model\Using python\5. Clipped simulated runoff\404 sub basin SimRunoff clipped\404 reunit_discharge_values.xlsx"
+output_file_path = r"path\Output_excelfile.xlsx"
 result_df.to_excel(output_file_path, index=False)
 
 print(f"Results saved to {output_file_path}")
