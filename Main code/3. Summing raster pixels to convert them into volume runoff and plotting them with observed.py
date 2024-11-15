@@ -4,7 +4,7 @@ import matplotlib.dates as mdates
 import numpy as np
 
 # Load the Excel file containing simulated runoff data
-file_path = "./Output/Simulated_Runoff.xlsx"
+file_path = "./Your Output folder of 2nd step/Simulated_Runoff.xlsx"
 df = pd.read_excel(file_path)
 
 # Columns corresponding to the pixel data (up to the 801st column, which is named '799')
@@ -27,7 +27,7 @@ total_area = 3.6598e+10  # Replace this with your actual area in sq. m
 df['Simulated_Streamflow_mm'] = df['Simulated_Volume_m3'] / total_area * 1000  # Convert to mm
 
 # Load the observed volume data from the Excel file
-observed_file_path = "./Data/2. Volume_m3_observed_flow.xlsx"
+observed_file_path = "./Your Data Folder/3. example excel file.xlsx"
 observed_df = pd.read_excel(observed_file_path)
 
 # Ensure 'Date' is properly formatted in both dataframes
