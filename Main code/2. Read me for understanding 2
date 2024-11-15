@@ -1,0 +1,14 @@
+# Combine_PET_Precip_LST_and_Runoff_Modeling.py
+
+## Purpose:
+This script combines three meteorological inputs:
+1. Potential Evapotranspiration (PET)
+2. Precipitation (P)
+3. Land Surface Temperature (LST)
+
+The script integrates these inputs into a single Excel file and runs a hydrological model. The model generates the following outputs:
+- Simulated runoff
+- SVecWR (Storage of wet region (snow))
+- UR (Unsaturated Zone Storage) for each raster pixel.
+
+The output is stored as raster data for spatial analysis.
