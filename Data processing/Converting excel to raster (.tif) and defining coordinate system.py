@@ -5,7 +5,7 @@ import rasterio
 from rasterio.transform import from_origin
 
 # Load the Excel file
-file_path = "D:/Nepal/Narayani DEM/input values/2004_2014/Eawag Research/Distributed model/Using python/2.Output sim runoff_Svec_WR and UR excel after processing p_pet_lst in excel format new/Simulated_Runoff.xlsx"
+file_path = "Your folder path/Simulated_Runoff.xlsx"
 df = pd.read_excel(file_path, index_col=0)
 
 # Set grid dimensions
@@ -14,11 +14,11 @@ nrows = 25
 numtotal = nrows * ncols
 
 # Intermediate output directory
-intermediate_output_dir = "D:/Nepal/Narayani DEM/input values/2004_2014/Eawag Research/Distributed model/Using python/3. Simulated runoff"
+intermediate_output_dir = "Your intemediate output folder/3. Simulated runoff"
 os.makedirs(intermediate_output_dir, exist_ok=True)
 
 # Final output directory
-final_output_dir = "D:/Nepal/Narayani DEM/input values/2004_2014/Eawag Research/Distributed model/Using python/4. Simulated runoff xy defined"
+final_output_dir = "Your output folder/4. Simulated runoff xy defined"
 os.makedirs(final_output_dir, exist_ok=True)
 
 # Pixel size
@@ -72,7 +72,7 @@ for idx, row in df.iterrows():
 print("Intermediate rasters created successfully.")
 
 # Read reference raster
-reference_raster_path = "D:/Nepal/Narayani DEM/input values/2004_2014/reproject LST 2004_2013/LST_2004Apr.tif"
+reference_raster_path = "Your folder path of raster/Your_tiff_file.tif"
 with rasterio.open(reference_raster_path) as ref_raster:
     ref_transform = ref_raster.transform
     ref_crs = ref_raster.crs
