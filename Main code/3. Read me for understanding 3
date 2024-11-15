@@ -1,0 +1,16 @@
+# Sum_Raster_Pixels_to_Volume_and_Plot_Observed_Runoff.py
+
+## Purpose:
+This script performs the following tasks:
+1. Aggregates pixel-wise raster data to calculate total runoff volume (in mm).
+2. Compares the modeled runoff volume with observed runoff data.
+3. Plots the results for visualization and analysis (in mm/month).
+
+### Inputs:
+- Raster file representing distributed runoff.
+- Observed runoff data for validation.
+
+### Outputs:
+- Total runoff volume (calculated from raster pixels).
+- Plot comparing modeled and observed runoff.
+
