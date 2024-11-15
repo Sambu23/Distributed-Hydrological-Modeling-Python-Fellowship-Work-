@@ -11,8 +11,8 @@ import os
 import glob
 
 # Directory paths
-input_raster_dir = r"D:\Nepal\Narayani DEM\input values\2004_2014\Eawag Research\Distributed model\Using python\4. Simulated runoff xy defined"
-output_raster_dir = r"D:\Nepal\Narayani DEM\input values\2004_2014\Eawag Research\Distributed model\Using python\5. Clipped simulated runoff"
+input_raster_dir = r"Your input folder containing raster file"
+output_raster_dir = r"Your output folder"
 
 # Function to check file accessibility
 def check_file_accessibility(file_path, check_write=False):
