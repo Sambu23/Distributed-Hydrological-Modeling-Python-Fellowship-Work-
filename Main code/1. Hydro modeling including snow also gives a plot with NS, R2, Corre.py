@@ -25,8 +25,8 @@ def calculate_r_squared_and_correlation(Qobs, Qsim):
     return r_squared, correlation_xy
 
 # Load the Excel files
-path_lst = "./Data/1.LST value of raster by python 2004_2013.xlsx"
-path_pet = "./Data/1.PET value of raster by python 2004_2013.xlsx"
+path_lst = "./Your Data Folder/1.LST value of raster by python 2004_2013.xlsx"
+path_pet = "./Your Data Folder/1.PET value of raster by python 2004_2013.xlsx"
 path_precip = "./Data/1.Precipitation value of raster from 2004 to 2013.xlsx"
 
 lst_df = pd.read_excel(path_lst, index_col=0)
@@ -102,9 +102,9 @@ Svec_UR_df = pd.DataFrame(Svec_UR, index=lst_df.index, columns=lst_df.columns)
 
 # Save the results to Excel files with NaN correctly represented
 Path("./Output/").mkdir(parents=True, exist_ok=True)
-output_path_runoff = "./Output/Simulated_Runoff.xlsx"
-output_path_Svec_WR = "./Output/Svec_WR.xlsx"
-output_path_Svec_UR = "./Output/Svec_UR.xlsx"
+output_path_runoff = "./Your Output folder/Simulated_Runoff.xlsx"
+output_path_Svec_WR = "./Your Output folder/Svec_WR.xlsx"
+output_path_Svec_UR = "./Your Output folder/Svec_UR.xlsx"
 
 simulated_runoff_df.to_excel(output_path_runoff, na_rep=np.nan)
 Svec_WR_df.to_excel(output_path_Svec_WR, na_rep=np.nan)
